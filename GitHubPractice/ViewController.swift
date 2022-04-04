@@ -27,7 +27,7 @@ class ViewController: UIViewController
         let divide1Int = Int(divide1)!
         let divide2Int = Int(divide2)!
         
-        let quotient = divide1Int - divide2Int
+        let quotient = divide1Int / divide2Int
         
         answerLabel.text = "\(quotient)"
         operationLabel.text = "/"
