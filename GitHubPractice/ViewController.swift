@@ -7,13 +7,34 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    @IBOutlet weak var firstNumberTextField: UITextField!
+    @IBOutlet weak var secondNumberTextField: UITextField!
+    @IBOutlet weak var operationLabel: UILabel!
+    @IBOutlet weak var answerLabel: UILabel!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
+    @IBAction func whenAddButtonPressed(_ sender: UIButton)
+    {
+        
+        let Add1 = firstNumberTextField.text!
+        let Add2 = secondNumberTextField.text!
+        
+        let Add1Int = Int(Add1)!
+        let Add2Int = Int(Add2)!
+        
+        let Sum: Int = Add1Int+Add2Int
+        
+        answerLabel.text = "\(Sum)"
+        operationLabel.text = "+"
+       
+        
+    }
 
 }
-
