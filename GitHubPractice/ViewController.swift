@@ -19,7 +19,19 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
     }
-
+    @IBAction func whenSubtractButtonPressed(_ sender: UIButton) {
+        let subtract1 = firstNumberTextField.text!
+        let subtract2 = secondNumberTextField.text!
+        
+        let subtract1Int = Int(subtract1)!
+        let subtract2Int = Int(subtract2)!
+        
+        let Sum = subtract1Int + subtract2Int
+        
+        answerLabel.text = "\(Sum)"
+        operationLabel.text = "-"
+    }
+    
     @IBAction func whenAddButtonPressed(_ sender: UIButton)
     {
         
