@@ -56,6 +56,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Divide"/>
+                                <connections>
+                                    <action selector="whenDivideButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ecQ-mi-ejw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2J-s8-WUh">
                                 <rect key="frame" x="103" y="224" width="80" height="31"/>
