@@ -19,6 +19,20 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
     }
+    
+    @IBAction func whenDivideButtonPressed(_ sender: UIButton) {
+        let divide1 = firstNumberTextField.text!
+        let divide2 = secondNumberTextField.text!
+        
+        let divide1Int = Int(divide1)!
+        let divide2Int = Int(divide2)!
+        
+        let quotient = divide1Int - divide2Int
+        
+        answerLabel.text = "\(quotient)"
+        operationLabel.text = "/"
+    }
+    
     @IBAction func whenSubtractButtonPressed(_ sender: UIButton) {
         let subtract1 = firstNumberTextField.text!
         let subtract2 = secondNumberTextField.text!
@@ -26,9 +40,9 @@ class ViewController: UIViewController
         let subtract1Int = Int(subtract1)!
         let subtract2Int = Int(subtract2)!
         
-        let Sum = subtract1Int + subtract2Int
+        let Difference = subtract1Int - subtract2Int
         
-        answerLabel.text = "\(Sum)"
+        answerLabel.text = "\(Difference)"
         operationLabel.text = "-"
     }
     
