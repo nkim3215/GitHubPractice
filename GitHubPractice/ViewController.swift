@@ -24,8 +24,8 @@ class ViewController: UIViewController
         let divide1 = firstNumberTextField.text!
         let divide2 = secondNumberTextField.text!
         
-        let divide1Int = Int(divide1)!
-        let divide2Int = Int(divide2)!
+        let divide1Int = Double(divide1)!
+        let divide2Int = Double(divide2)!
         
         let quotient = divide1Int / divide2Int
         
