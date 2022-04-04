@@ -47,6 +47,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                <connections>
+                                    <action selector="whenAddButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vmM-lg-gJZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHf-js-2Qw">
                                 <rect key="frame" x="328" y="224" width="65" height="31"/>
@@ -59,12 +62,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Subtract"/>
+                                <connections>
+                                    <action selector="whenSubtractButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Q0-SS-Vk3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s70-m1-S8O">
                                 <rect key="frame" x="235" y="224" width="75" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Multiply"/>
+                                <connections>
+                                    <action selector="whenMultiplyButtonPressedWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wvK-47-maO"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpw-JN-ToJ">
                                 <rect key="frame" x="309" y="122" width="105" height="29"/>
@@ -77,6 +86,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="xpw-JN-ToJ" id="WtH-yd-bpZ"/>
+                        <outlet property="firstNumberTextField" destination="TDv-IC-cUs" id="5v6-YO-1Er"/>
+                        <outlet property="operationLabel" destination="qYi-WM-jaa" id="e98-nd-XlR"/>
+                        <outlet property="secondNumberTextField" destination="OvG-Fa-oHl" id="rt6-dm-Cni"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

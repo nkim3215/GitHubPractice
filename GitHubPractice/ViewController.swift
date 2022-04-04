@@ -26,9 +26,9 @@ class ViewController: UIViewController
         let subtract1Int = Int(subtract1)!
         let subtract2Int = Int(subtract2)!
         
-        let Sum = subtract1Int + subtract2Int
+        let Difference = subtract1Int - subtract2Int
         
-        answerLabel.text = "\(Sum)"
+        answerLabel.text = "\(Difference)"
         operationLabel.text = "-"
     }
     
@@ -62,5 +62,7 @@ class ViewController: UIViewController
         answerLabel.text = "\(Product)"
         operationLabel.text = "*"
     }
+    
+    
 
 }
