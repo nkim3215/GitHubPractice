@@ -36,5 +36,19 @@ class ViewController: UIViewController
        
         
     }
+    
+    @IBAction func whenMultiplyButtonPressed(_sender: UIButton)
+    {
+        let Multiply1 = firstNumberTextField.text!
+        let Multiply2 = secondNumberTextField.text!
+        
+        let Multiply1Int = Int(Multiply1)!
+        let Multiply2Int = Int(Multiply2)!
+        
+        let Product: Int = Multiply1Int*Multiply2Int
+        
+        answerLabel.text = "\(Product)"
+        operationLabel.text = "*"
+    }
 
 }
